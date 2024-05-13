@@ -11,9 +11,9 @@ const ClickerColector = ({ children }) => {
 
     const trackClickAndPosition = (event) => {
         const clickData = {
-            timestamp: new Date().toISOString(), // Timestamp em UTC
-            xPosition: event.clientX,
-            yPosition: event.clientY
+            timestamp: new Date().toISOString(), 
+            xPosition: event.pageX, 
+            yPosition: event.pageY 
         };
 
         setData(prevData => [...prevData, clickData]);
@@ -24,14 +24,12 @@ const ClickerColector = ({ children }) => {
         csvContent += "Timestamp,X Position,Y Position\n";
 
         data.forEach(click => {
-            // Converter o horário para o fuso horário local antes de adicionar ao CSV
             const localTimestamp = new Date(click.timestamp).toLocaleString();
             csvContent += localTimestamp + "," + click.xPosition + "," + click.yPosition + "\n";
         });
 
         const encodedUri = encodeURI(csvContent);
 
-        // Criar um link temporário para iniciar o download
         const link = document.createElement("a");
         link.setAttribute("href", encodedUri);
         link.setAttribute("download", "navigation_data.csv");
@@ -39,7 +37,6 @@ const ClickerColector = ({ children }) => {
         link.click();
         document.body.removeChild(link);
 
-        // Limpar os dados após exportar com sucesso
         setData([]);
     }
 
