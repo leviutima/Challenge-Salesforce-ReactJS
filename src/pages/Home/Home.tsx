@@ -17,7 +17,7 @@ function Home() {
         <ClickerColector>
           <MainPageTitle>
             <h1>{title}</h1>
-            <img src="src\assets\images\what-is-astro-product-family.png" alt="" />
+            <img src="src\assets\images\what-is-astro-product-family.png" alt="Imagem de demonstração produto d Sales Force" />
           </MainPageTitle>
 
           <FlexSection>
@@ -26,7 +26,7 @@ function Home() {
                 <h2>O que é a Salesforce?</h2>
               </Link>
               <Link to="/salesforce">
-                <img src="src\assets\images\how-to-sell.jpg" alt="" />
+                <img src="src\assets\images\how-to-sell.jpg" alt="Imagem representando o que é a Sales Force" />
               </Link>
             </Card>
 
@@ -35,7 +35,7 @@ function Home() {
                 <h2>O que é CRM?</h2>
               </Link>
               <Link to="/crm">
-                <img src="src\assets\images\php-rc-what-is-crm.jpg" alt="" />
+                <img src="src\assets\images\php-rc-what-is-crm.jpg" alt="Imagem representando o que é Crm" />
               </Link>
             </Card>
           </FlexSection>
@@ -48,7 +48,7 @@ function Home() {
                   <h2>Sales Cloud</h2>
                 </Link>
                 <Link to="/salescloud">
-                  <img src="src\assets\images\sales-image-mx.png" alt="" />
+                  <img src="src\assets\images\sales-image-mx.png" alt="Imagem do Sales Cloud" />
                 </Link>
               </Card>
 
@@ -57,7 +57,7 @@ function Home() {
                   <h2>Einstein GPT</h2>
                 </Link>
                 <Link to="/einstein-gpt">
-                  <img src="src\assets\images\einsteinpng.png" alt="" />
+                  <img src="src\assets\images\einsteinpng.png" alt="Imagem do Einstein GPT" />
                 </Link>
               </Card>
             </FlexSection>

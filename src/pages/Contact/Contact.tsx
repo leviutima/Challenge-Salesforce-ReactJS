@@ -1,6 +1,7 @@
-import { Button } from "@mui/material"
+import { Button } from "../../components/Button/Button.tsx";
 import { Layout } from "../../components/Layout/Layout"
 import { BackgroundForm, ConfigDiv, FlexSection, FormContainer, FormSection, Input, InputBox, MainPageTitle, ParagraphForm, SectionConfig, SpecialInput } from "../../components/Sections/Sections.style"
+
 
 
 function Contact() {
@@ -20,7 +21,7 @@ function Contact() {
                     <p>Podemos te ajudar!</p>
                 </div>
                 <div>
-                    <img src="src\assets\images\Group 26.png"></img>
+                    <img src="src\assets\images\Group 26.png" alt='imagem de duas pessoas com moletom escrito trail blazer'></img>
                 </div>
                 </ConfigDiv>
                 </SectionConfig>
@@ -60,6 +61,7 @@ function Contact() {
                     <div>
                         <input type="text" placeholder="Perguntas/Comentários" style={InputBox}></input>
                     </div>
+                        <Button>ENVIAR</Button>
                 </FormSection>
             </FlexSection>
         </Layout>
